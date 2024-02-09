@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  transition-duration: 0.5s;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+   
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.loadwrapper {
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  position: absolute;
+  overflow: hidden;
+  z-index: -100;
+}
+.loader {
+  position: absolute;
+  background-color: rgb(5, 39, 18);
+  height: 100vh;
+  width: 100vw;
+  transform: translateY(100vh);
+}
+
+
+.loadwrapper-1 {
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  position: absolute;
+  overflow: hidden;
+  z-index: 100;
+}
+.loader-1 {
+  position: absolute;
+  background-color: rgb(5, 39, 18);
+  height: 100vh;
+  width: 100vw;
+  transform: translateY(0vh);
+}
