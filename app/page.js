@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 
+
 export default function Home() {
   const router = useRouter();
   const [imageWidth, setImageWidth] = useState(100);
@@ -40,6 +41,7 @@ export default function Home() {
      <Head>
         <title>home Page</title>
       </Head>
+      <Link href="/jk">jihad</Link>
     <div className="loadwrapper">
     <div className="loader"></div>
     </div>
