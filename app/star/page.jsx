@@ -45,9 +45,9 @@ const Page = () => {
   
       ScrollTrigger.create({
         trigger: ".starback",
-        start: "top 0%",
+        start: "top 20%",
         end: "bottom center",
-        pin:".circle-canvas",
+        pin:".starback",
         scrub: true,
         markers: true,
         animation: animation,
