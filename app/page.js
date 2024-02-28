@@ -41,7 +41,7 @@ export default function Home() {
      <Head>
         <title>home Page</title>
       </Head>
-      <Link href="/jk">jihad</Link>
+      
     <div className="loadwrapper">
     <div className="loader"></div>
     </div>
