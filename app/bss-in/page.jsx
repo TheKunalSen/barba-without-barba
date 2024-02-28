@@ -8,8 +8,13 @@ const Page = () => {
   const promptId = searchParams.get('id');
  
 console.log(promptId)
+
   return (
-    <div>{promptId}</div>
+   
+    promptId ?
+    (<div>{promptId}</div>)
+    :
+   ( <div></div>)
   );
 };
 
